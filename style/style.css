@@ -6,7 +6,7 @@
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
-    --primario: #f8f809;
+    --primario: #ffc107;
     --secundario: #0097A7;
     --gris: #757575;
 }
@@ -31,7 +31,13 @@ body {
 
 .nav-bckg {
     background-color: var(--secundario);
+}
+.nav-bckg a {
     padding: 1rem;
+}
+.nav-bckg a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
 }
 .navegacion-principal {
     margin: auto;
@@ -42,4 +48,5 @@ body {
 .navegacion-principal a {
     color: var(--blanco);
     text-decoration: none;
+    font-weight: 800;
 }
