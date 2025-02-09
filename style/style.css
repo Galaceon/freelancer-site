@@ -16,12 +16,30 @@ html {
 }
 body {
     font-size: 16px;
+    font-family: "Krub";
 }
+
+
 .titulo {
     text-align: center;
     font-size: 3.8rem;
-    font-family: "Krub";
 }
 .titulo span {
     font-size: 2.3rem;
+}
+
+
+.nav-bckg {
+    background-color: var(--secundario);
+    padding: 1rem;
+}
+.navegacion-principal {
+    margin: auto;
+    width: 120rem;
+    display: flex;
+    justify-content:space-evenly;
+}
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
 }
