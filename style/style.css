@@ -18,6 +18,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-snap-type: y mandatory;
 }
 body {
     font-size: 16px;
@@ -150,7 +151,12 @@ h1,h2,h3 {
 }
 
 
-
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
 
 .servicios {
     display: grid;
@@ -159,7 +165,6 @@ h1,h2,h3 {
 }
 @media (min-width: 780px) {
     .servicios {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 }
