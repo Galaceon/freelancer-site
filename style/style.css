@@ -13,6 +13,7 @@
     --primario: #ffc107;
     --secundario: #0097A7;
     --gris: #757575;
+    --grisClaro: #dbdbdb;
 }
 
 html {
@@ -21,17 +22,27 @@ html {
 body {
     font-size: 16px;
     font-family: "Krub";
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
 
 
-.titulo {
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h1,h2,h3 {
     text-align: center;
-    font-size: 3.8rem;
-}
-.titulo span {
-    font-size: 2.3rem;
 }
 
+
+.titulo span {
+    font-size: 2.5rem;
+}
 
 .nav-bckg {
     background-color: var(--secundario);
@@ -70,6 +81,7 @@ body {
     object-position: center;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido_hero {
@@ -87,4 +99,41 @@ body {
 .contenido_hero p,
 .contenido_hero h2 {
     color: var(--blanco);
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 120rem;
+}
+.boton {
+    background-color: var(--secundario);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+}
+@media (min-width: 780px) {
+    .boton {
+        width: auto;
+    }
+}
+
+
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(85, 85, 85, 0.6);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
 }
