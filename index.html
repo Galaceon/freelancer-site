@@ -81,29 +81,31 @@
                 <form class="formulario">
                     <fieldset>
                         <legend>Contactános llenando todos los campos</legend>
-                        
-                        <div>
-                            <label>Nombre</label>
-                            <input type="text" placeholder="Tu nombre">
+                            
+                        <div class="contenedor_campos">
+                            <div class="campo">
+                                <label>Nombre</label>
+                                <input type="text" placeholder="Tu nombre">
+                            </div>
+                            
+                            <div class="campo">
+                                <label>Teléfono</label>
+                                <input type="tel" placeholder="Tu telefono">
+                            </div>
+                            
+                            <div class="campo">
+                                <label>Correo</label>
+                                <input type="email" placeholder="Tu email">
+                            </div>
+                            
+                            <div class="campo">
+                                <label>Mensaje</label>
+                                <textarea></textarea>
+                            </div>
                         </div>
                         
-                        <div>
-                            <label>Teléfono</label>
-                            <input type="tel" placeholder="Tu telefono">
-                        </div>
-                        
-                        <div>
-                            <label>Correo</label>
-                            <input type="email" placeholder="Tu email">
-                        </div>
-                        
-                        <div>
-                            <label>Mensaje</label>
-                            <textarea></textarea>
-                        </div>
-                        
-                        <div>
-                            <input type="submit" value="enviar">
+                        <div class="formInput">
+                            <input  class="boton botonForm" type="submit" value="enviar">
                         </div>
                     </fieldset>
                 </form>
@@ -111,7 +113,7 @@
 
         </main>
 
-        <footer>
+        <footer class="footer">
             <p>Todos los derechos reservado. Antonio Jesus Garcia</p>
         </footer>
     </body>
