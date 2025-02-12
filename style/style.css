@@ -103,7 +103,7 @@ h1,h2,h3 {
 
 .contenedor {
     margin: 0 auto;
-    width: 120rem;
+    max-width: 120rem;
 }
 .boton {
     background-color: var(--secundario);
@@ -134,6 +134,34 @@ h1,h2,h3 {
 
 .servicios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-gap: 1.7rem;
+}
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: normal;
+}
+.servicio p {
+    line-height: 2;
+}
+.servicio .iconos {
+    background-color: var(--primario);
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (min-width: 780px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
